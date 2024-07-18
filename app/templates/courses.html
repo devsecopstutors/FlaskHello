@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Courses - My Data Science Website{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Our Courses</h1>
+        <p class="lead">Explore our comprehensive range of data science courses designed for all skill levels.</p>
+        <hr class="my-4">
+        <p>Whether you're a beginner or a professional, we have something to help you advance your data science skills.</p>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm animated fadeInUp">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Beginner Course">
+                <div class="card-body">
+                    <h5 class="card-title">Data Science for Beginners</h5>
+                    <p class="card-text">Get started with the basics of data science. Learn about data collection, cleaning, and visualization.</p>
+                    <a href="/course/beginner" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm animated fadeInUp" style="animation-delay: 0.2s;">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Intermediate Course">
+                <div class="card-body">
+                    <h5 class="card-title">Intermediate Data Science</h5>
+                    <p class="card-text">Build on your existing knowledge with more advanced techniques in data analysis and machine learning.</p>
+                    <a href="/course/intermediate" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm animated fadeInUp" style="animation-delay: 0.4s;">
+                <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Advanced Course">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced Data Science</h5>
+                    <p class="card-text">Master advanced data science techniques, including deep learning, big data, and artificial intelligence.</p>
+                    <a href="/course/advanced" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-12 text-center">
+            <h2>Why Choose Our Courses?</h2>
+            <p>Our courses are designed by industry experts to provide you with the skills and knowledge needed to succeed in the field of data science. We offer hands-on projects, real-world case studies, and personalized feedback to ensure you get the most out of your learning experience.</p>
+            <a href="/contact" class="btn btn-lg btn-secondary animated bounceIn">Get in Touch</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

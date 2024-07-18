@@ -1,0 +1,13 @@
+myapp/
+  ├── app/
+  │   ├── __init__.py
+  │   ├── routes.py
+  │   ├── templates/
+  │   │   ├── base.html
+  │   │   ├── home.html
+  │   │   ├── about_us.html
+  │   │   └── intro_to_ds.html
+  ├── Dockerfile
+  ├── requirements.txt
+  ├── run.py
+  └── .gitignore
