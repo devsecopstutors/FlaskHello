@@ -23,5 +23,10 @@ class BasicTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Introduction to Data Science', response.data)
 
+    def test_courses(self):
+        response = self.client.get('/courses')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Explore our comprehensive range of data science courses', response.data)
+
 if __name__ == "__main__":
     unittest.main()

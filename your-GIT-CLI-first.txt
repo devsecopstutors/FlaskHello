@@ -141,9 +141,12 @@ Add Remote Name
 Remove Remote Name
     git remote remove <remote-name>
 
+Setting Origin for Newly Created project that is not cloned or pulled 
+git push --set-upstream origin main
 
 
-
+Testing connectivity to Remote
+git ls-remote --exit-code origin
 
 
 
@@ -151,3 +154,6 @@ Remove Remote Name
 
 
 Reseting Remote Credentials
+gh auth login
+
+gh repo view OWNER/REPOSITORY --json permissions
