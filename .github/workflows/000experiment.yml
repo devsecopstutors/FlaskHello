@@ -1,0 +1,12 @@
+name: Experiment On Push Request
+
+on: push 
+
+env:
+  message: 'world'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run a one-line script
+      run: echo Hello, ${message}!

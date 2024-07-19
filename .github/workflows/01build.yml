@@ -27,4 +27,4 @@ jobs:
       - name: Build application
         run: |
           . venv/bin/activate
-          python setup.py build
+          python run.py build
