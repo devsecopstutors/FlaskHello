@@ -1,3 +1,19 @@
+WORKSPACE      STAGING/INDEXING       LOCAL-REPO      REMOTE-REPO 
+|init, add ----------->|---commit -------->| ---push--------->|
+|<-- git reset <file>--|                   |<---  git fetch---|
+|-------------    git commit -a  --------->|
+|<----------  git reset commit  -----------|
+|-------------    git commit -a  --------->|
+|<----------------------------clone/pull-----------------|
+|   git diff           |
+|              git diff HEAD               |
+
+
+
+
+
+
+
 Here is a group of common Git commands organized by their typical use cases.
 Basic Git Commands
     Initialize a new Git repository:
